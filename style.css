@@ -13,18 +13,18 @@
 
 body {
     display: flex;
+    flex-direction: column;
     margin-top: 20px;
     background-color: var(--bgcolor--);
-    justify-content: center;
-
-
+    align-items: center;
 }
 
 .corpo {
     width: 500px;
+    max-width: 90%;
     background-color: var(--secondarycolor--);
     box-shadow: 8px 10px 30px;
-    min-height: 500px;
+    min-height: 400px;
 
 }
 
@@ -43,7 +43,7 @@ h1 {
 
 main {
     max-height: max-content;
-    min-height: 80%;
+    min-height: 400px;
 }
 
 /*area de input*/
@@ -53,18 +53,19 @@ main {
     padding: 20px;
     align-items: center;
     border-bottom: 2px solid var(--primarycolor--);
-    ;
+
 }
 
-#caixaTexto {
+.input {
     width: 75%;
     height: 40px;
     border-radius: 10px;
     border: 1px solid gray;
     padding: 10px;
+    font-size: 20px;
 }
 
-#botao {
+.btn {
     width: 20%;
     height: 40px;
     margin-left: 20px;
@@ -75,7 +76,7 @@ main {
     border: none;
 }
 
-#botao:hover {
+.btn:hover {
     border: 2px solid var(--primarycolor--);
 }
 
@@ -101,18 +102,19 @@ main {
     margin-right: 20px;
 }
 
-#tarefa {
+.tarefa {
     width: 500px;
     height: auto;
     max-width: 80%;
-    margin: 20px;
+    margin: 10px;
     padding: 8px;
     border-bottom: 1px dashed rgb(69, 69, 70);
     word-wrap: break-word;
+    font-size: 20px;
 
 }
 
-#deleteButton {
+.delBtn {
     width: 20%;
     height: 40px;
     background-color: rgba(0, 0, 0, 0);
@@ -126,7 +128,7 @@ main {
     height: 30px;
 }
 
-#deleteButton:hover {
+.delBtn:hover {
     background-color: rgba(143, 0, 0, 0.4);
 }
 
